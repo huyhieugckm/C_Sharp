@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Cinema List";
+}
+
+<h2>Cinema List</h2>
+<table class="table">
+    <thead>
+    <tbody>
+            <td>
+                @Html.ActionLink("CGV", "InforCGV", "Cinema")
+            </td>
+            <td>
+                @Html.ActionLink("Lotte", "InforLotte", "Cinema")
+            </td>
+            <td>
+                @Html.ActionLink("BHD", "InforBHD", "Cinema")
+            </td>
+    </tbody>
+</table>
+<div>
+    @Html.ActionLink("Back to Movie List", "Index", "Movies")
+</div>
